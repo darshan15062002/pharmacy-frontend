@@ -1,0 +1,106 @@
+.banner{
+    height: 100vh;
+    background-image: url("../../image/banner.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: roboto;
+    text-align: center;
+    gap: 5px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+.banner > a{
+    padding: 8px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    gap: 4px;
+    font-weight:500;
+    text-decoration: none;
+}
+.banner > a:hover{
+    background: white;
+    color: black;
+    font-family: "roboto";
+    font-weight:500
+}
+.banner > a> button{
+    background: transparent;
+    border: none;
+}
+.Home_heading{
+    text-align: center;
+    font-family: 'roboto';
+    margin-bottom: 5px;
+    width: 20vmax;
+    margin: 5vmax auto;
+    border-bottom: 1px solid black;
+    font-size: 2vmax;
+}
+.container{
+    margin: 5px 10vmax;
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap:5vmax;
+    justify-content: center;
+    
+
+}
+.product_Cart{
+    width: 14vmax;
+    height: 19vmax;
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    transition: all 0.5;
+    padding-bottom: 0.5vmax;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translatey(-2vmax)
+}
+.product_Cart > img{
+    width:14vmax,
+    
+}
+.product_Cart > span{
+    font-size: 1vmax;
+    color: tomato;
+}
+.product_Cart > div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7vmax;
+    align-items: center;
+}
+.show_wraper{
+    position: fixed;
+    background: white;
+ margin: 3vmax 10vmax;
+ 
+ display: flex;
+bottom: 5px;
+top:2px;
+padding: 5vmax;
+gap:25px;
+border-radius: 20px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+z-index: 100;
+
+}
+.show_wraper > img{
+    height: 400px;
+}
+.show_Left{
+    margin-top: 25px ;
+    display: flex;
+    flex-direction: column;
+    gap:23px;
+}

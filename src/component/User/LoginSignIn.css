@@ -1,0 +1,73 @@
+.LoginSignUpContainer{
+    
+    margin: 5vmax auto;
+
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+}
+.LoginSignUpBox{
+    width: 30vmax;
+    padding: 3vmax;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Login_SignUp_toggle{
+    display: flex;
+    justify-content: space-around;
+    font-family: roboto;
+    cursor: pointer;
+    padding-bottom: 0.3vmax;
+    text-align: center;
+}
+.Login_SignUp_toggle > p{
+    padding: 1vmax;
+    border-bottom: 3px solid white;
+    width: 100%;
+}
+.Login_SignUp_toggle > p:hover{
+    
+border-bottom: 3px solid green;
+
+}
+input{
+    width: 100%;
+    padding: 0.7vmax 3vmax;
+}
+input:focus{
+    outline: none !important;
+    border-color:green;
+ 
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    gap:2vmax;
+    margin: 2vmax auto;
+}
+.login_Email,
+.login_Password{
+    display: flex;
+}
+.icon{
+    position: absolute;
+    margin-left: 0.5vmax;
+    margin-top: 0.4vmax;
+    color: green;
+
+}
+.login_Btn{
+    font-family: ububtu;
+    font-size: 1rem;
+    font-weight: 900;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+.forget{
+    text-decoration: none;
+    font-family: roboto;
+    color:green
+}
