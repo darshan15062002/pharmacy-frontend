@@ -34,7 +34,7 @@ function LoginSignIn() {
     }
     const loginSubmit = async (e) => {
         e.preventDefault();
-        const res = await axios.post('http://localhost:4000/api/v1/login', { email, password }).catch((err) => {
+        const res = await axios.post('https://pharmacy-backend-nngo.onrender.com/api/v1/login', { email, password }).catch((err) => {
             console.log(err);
             return;
 
@@ -43,7 +43,7 @@ function LoginSignIn() {
     }
     const registerSubmit = async (e) => {
         e.preventDefault();
-        const res = await axios.post('http://localhost:4000/api/v1/register', { email, name, password }).catch((err) => {
+        const res = await axios.post('https://pharmacy-backend-nngo.onrender.com/api/v1/register', { email, name, password }).catch((err) => {
             alert(err);
             return;
 

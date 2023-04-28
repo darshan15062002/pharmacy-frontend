@@ -15,7 +15,7 @@ const Productpage = () => {
 
     useEffect(() => {
         const getAllProduct = async () => {
-            const res = await axios.get('http://localhost:4000/api/v1/product').then((data) => {
+            const res = await axios.get('https://pharmacy-backend-nngo.onrender.com/api/v1/product').then((data) => {
                 setProduct(data.data.product)
             })
         }
@@ -44,7 +44,7 @@ const Productpage = () => {
 
             </div>
             {show && (
-                <div className="show_wraper">
+                <div className="show_wraper" >
                     <span style={{ fontSize: "25px" }} onClick={() => { setShow(false) }}><CloseIcon /></span>
                     <img src={p.images[0].url} alt="" style={{ height: '16rem' }} className="show_Right" />
                     <div className="show_Left">

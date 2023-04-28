@@ -18,7 +18,7 @@ function Home() {
 
     useEffect(() => {
         const getAllProduct = async () => {
-            const res = await axios.get('http://localhost:4000/api/v1/product').then((data) => {
+            const res = await axios.get('https://pharmacy-backend-nngo.onrender.com/api/v1/product').then((data) => {
                 setProduct(data.data.product)
             })
         }
