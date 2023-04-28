@@ -10,17 +10,17 @@ const Productpage = () => {
     const [show, setShow] = useState(false)
     const [p, setP] = useState([])
     const dispatch = useDispatch()
-
+    const [page, setPage] = useState(1)
 
 
     useEffect(() => {
         const getAllProduct = async () => {
-            const res = await axios.get('https://pharmacy-backend-nngo.onrender.com/api/v1/product').then((data) => {
+            const res = await axios.get(`https://pharmacy-backend-nngo.onrender.com/api/v1/product?page=${page}`).then((data) => {
                 setProduct(data.data.product)
             })
         }
         getAllProduct()
-    }, [])
+    }, [page])
 
     const options = {
         edit: false,
@@ -29,6 +29,10 @@ const Productpage = () => {
         value: 2.5,
         isHalf: true,
         size: window.innerWidth < 600 ? 20 : 25
+    }
+    const buttonStyle = {
+        padding: "10px",
+        fontSize: '12px',
     }
     return (
         <>
@@ -56,7 +60,13 @@ const Productpage = () => {
                     </div>
                 </div >
             )
-            }</>
+            }
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                <button style={{ ...buttonStyle }} onClick={() => setPage(1)}>1</button>
+                <button style={{ ...buttonStyle }} onClick={() => setPage(2)}>2</button>
+                <button style={{ ...buttonStyle }} onClick={() => setPage(3)} >3</button >........
+                <button style={{ ...buttonStyle }} onClick={() => setPage(page + 1)}>Next</button>
+            </div></>
     )
 }
 
