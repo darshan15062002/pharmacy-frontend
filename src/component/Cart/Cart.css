@@ -1,13 +1,18 @@
+.container{
+    margin: 0;
+}
+
 .cart_wraper{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    display: flex;
-   margin: 3vmax 10vmax;
+ 
    padding: 3vmax;
    justify-content: space-start;
-   
+   width: 500px;
 
    gap:5vmax;
 }
+
 .cart_Right > img{
     height: 10vmax;
 
@@ -25,4 +30,41 @@
     border-bottom: 2px solid black;
     width: 20vmax;
     font-family: 'roboto';
+}
+.payment{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    width:500px;
+    margin-top: 45px;
+    margin-right: 40px;
+    height: 30vh;
+    display: flex;flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.payment .payment__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment .btn{
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.payment .btn button{
+    padding: 10px;
+    width: 90%;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    background: green;
+    bottom: 10px;
+  color: white;
+    outline: none;
+    border: none;
+}
+.cart__img{
+    display: flex;justify-content: center;
+    align-items: center;
 }
