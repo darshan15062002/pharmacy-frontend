@@ -29,7 +29,7 @@ function Cart() {
                         </div>
                     })}
                 </div>
-                {product.length1 == 0 ? (<div className="payment">
+                {product.length !== 0 ? (<div className="payment">
                     <div className="payment__container">
                         <h3>Totle Cart :</h3><span>{totle} Rs</span></div>
                     <div className="payment__container">
